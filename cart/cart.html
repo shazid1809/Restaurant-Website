@@ -1,0 +1,53 @@
+<!-- Abhi Patel / 8943801 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bean Store</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="cartHeader" onclick="goToHome()">
+        <h3 style="padding-left: 20px;">Summary</h3>
+    </header>
+    <main>
+        <div class="cart">
+            <div class="cartItems">  
+                <h1>YOUR ORDER</h1>
+                <div class="cartContainer" id="cartContainer"></div>
+            </div>
+            <div class="checkout">
+                <div>
+                    <h3>Review Order</h3>
+                    <div class="listItem">
+                        <div>
+                            <label for="quantity">Please Add Quantity</label>
+                            <input type="number" id="quantity" name="quantity">
+                        </div>
+                        <div>
+                            <button class="checkoutBt" name="add" id="add">Add Quantity</button>
+                        </div>
+                    </div>
+                    <div class="cktCtn">
+                        <div class="total">
+                            <h3>Total</h3>
+                            <h3 class="cost">$ </h3>
+                        </div>
+                        <div class="btnContainer" id="checkout">
+                            <button class="checkoutBt">
+                                checkout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./cart.js"></script>
+</body>
+</html>
